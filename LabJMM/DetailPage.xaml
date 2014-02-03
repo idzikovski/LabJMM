@@ -1,0 +1,44 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="LabJMM.DetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="N" Text="Ime" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" FontWeight="Bold"></TextBlock>
+            <TextBlock x:Name="Name" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1"></TextBlock>
+
+            <TextBlock x:Name="O" Text="Opis" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" FontWeight="Bold"></TextBlock>
+            <TextBlock x:Name="Opis" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3"></TextBlock>
+
+            <TextBlock x:Name="P" Text="Posetiteli" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="4" FontWeight="Bold"></TextBlock>
+            <TextBlock x:Name="Posetiteli" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="5"></TextBlock>
+
+            <Button x:Name="btnMapa" Grid.Row="7" Width="200" Height="80" Tap="btnMapa_Tap">Mapa</Button>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
